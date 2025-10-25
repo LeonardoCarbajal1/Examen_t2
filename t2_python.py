@@ -38,7 +38,7 @@ def contar_vocales(matriz):
     mitad = len(matriz) // 2
     return contar_vocales(matriz[:mitad]) + contar_vocales(matriz[mitad:])
 
-tamano = int(input("Ingrese el tamaño de la matriz: "))
-matriz = generar_matriz(tamano)
+tamaño = int(input("Ingrese el tamaño de la matriz: "))
+matriz = generar_matriz(tamaño)
 mostrar_matriz(matriz)
 print("Cantidad de palabras que tienen al menos una vocal:", contar_vocales(matriz))
