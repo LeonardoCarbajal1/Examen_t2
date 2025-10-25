@@ -8,11 +8,11 @@ def generar_palabra():
         palabra += letra
     return palabra
 
-def generar_matriz(tamano):
+def generar_matriz(tamaño):
     matriz = []
-    for i in range(tamano):
+    for i in range(tamaño):
         fila = []
-        for j in range(tamano):
+        for j in range(tamaño):
             fila.append(generar_palabra())
         matriz.append(fila)
     return matriz
